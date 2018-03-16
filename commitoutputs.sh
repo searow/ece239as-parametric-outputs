@@ -1,6 +1,13 @@
 #!/usr/bin/env bash
 
-cp ~/Documents/ece239as/project/output/output.csv .
+while [ 1 ]
+do
+	cp ~/Documents/ece239as/project/output/output.csv .
 
-git commit -am "automated commit"
-git push origin master
+	git commit -am "automated commit"
+	git push origin master
+
+	sleep 900
+done
+
+
